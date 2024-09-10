@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tạo form đơn giản 1</title>
+</head>
+<style>
+    td,th {
+      padding: 5px;
+    }
+    th {
+      border: 3px solid white;
+    }
+
+    table {
+        width: 40%;
+        font-family: sans-serif;
+        border: 12px solid aqua;
+        border-top-width: 6px;
+        border-bottom-width: 6px;
+    }
+</style>
+
+<body>
+<form method="get" action="formdg1.html">
+    <table>
+        <tr>
+            <th colspan="5" style="background-color: red; color:white">SỞ THÍCH CỦA BẠN</th>
+        </tr>
+        <tr>
+            <td style="text-align: right; color: blue"><label for="name">Họ và tên</label></td>
+            <td colspan="4"><input type="text" id="name" name="yourname" size="30"></td>
+        </tr>
+        <tr>
+            <td style="text-align: right; color: blue"><label for="email">Email</label></td>
+            <td colspan="4"><input type="text" id="email" name="email"></td>
+        </tr>
+        <tr>
+            <td style="text-align: right; color: blue">Sở thích</td>
+            <td>
+                <input type="checkbox" id="thethao" name="bobby">
+                <label for="thethao" style="color: orange">Thể thao</label>
+            </td>
+            <td>
+              <input type="checkbox" id="amnhac" name="bobby">
+              <label for="amnhac" style="color: orange">Âm nhạc</label>
+            </td>
+            <td>
+                <input type="checkbox" id="docsach" name="bobby">
+                <label for="docsach" style="color: orange">Đọc sách</label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox" id="luotweb" name="bobby">
+                <label for="luotweb" style="color: orange">Lướt web</label>
+            </td>
+            <td>
+              <input type="checkbox" id="choigame" name="bobby">
+              <label for="choigame" style="color: orange">Chơi game</label>
+            </td>
+            <td>
+                <input type="checkbox" id="dienanh" name="bobby">
+                <label for="dienanh" style="color: orange">Điện ảnh</label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox" id="dulich" name="bobby">
+               <label for="dulich" style="color: orange">Du lịch</label>
+            </td>
+            <td></td>
+            <td></td>
+            <td style="width: 10%"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3">
+                <input type="submit" value="Gửi thông tin">
+                <input type="reset" value="Nhập lại">
+            </td>
+        </tr>
+
+
+
+    </table>
+</form>
+</body>
+</html>
